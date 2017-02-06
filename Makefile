@@ -6,6 +6,7 @@ INSTALL = install
 CFLAGS += -Wall -g -O3 -march=armv7-a -mthumb -mthumb-interwork -mfloat-abi=hard -mfpu=neon -I/usr/local/oecore-x86_64/sysroots/armv7at2hf-vfp-neon-angstrom-linux-gnueabi/usr/include
 LDFLAGS += --sysroot=/usr/local/oecore-x86_64/sysroots/armv7at2hf-vfp-neon-angstrom-linux-gnueabi -L/usr/local/oecore-x86_64/sysroots/armv7at2hf-vfp-neon-angstrom-linux-gnueabi/usr/lib -Wl,-rpath-link,/usr/local/oecore-x86_64/sysroots/armv7at2hf-vfp-neon-angstrom-linux-gnueabi/usr/lib -L/usr/local/oecore-x86_64/sysroots/armv7at2hf-vfp-neon-angstrom-linux-gnueabi/lib -Wl,-rpath-link,/usr/local/oecore-x86_64/sysroots/armv7at2hf-vfp-neon-angstrom-linux-gnueabi/lib -mfloat-abi=hard
 
+
 OBJS =	dev_table.o	\
 	i2c.o		\
 	init.o		\
